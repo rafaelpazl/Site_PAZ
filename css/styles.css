@@ -11342,8 +11342,8 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
   width: auto;
+  background: #000;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -11877,4 +11877,9 @@ strong{
       width: 40%;
     }
   }
-  
+  #services{
+    background: #F8F9FA;
+  }
+  .fa-inverse{
+    color: #0C3FE8 !important;;
+  }
