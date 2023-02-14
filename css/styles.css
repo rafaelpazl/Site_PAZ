@@ -2193,10 +2193,10 @@ progress {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+  color: #000 !important;
+  background-color: #D3D2CE !important;
   background-clip: padding-box;
-  border: 3px solid #2491FA !important;
+  border-bottom: 3px solid #000 !important;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -11534,90 +11534,13 @@ header.masthead .masthead-heading {
   height: 2.75rem;
 }
 
-section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-section#contact .section-heading {
-  color: #fff;
-}
-section#contact form#contactForm .form-group {
-  margin-bottom: 1.5rem;
-}
-section#contact form#contactForm .form-group input,
-section#contact form#contactForm .form-group textarea {
-  padding: 1.25rem;
-}
-section#contact form#contactForm .form-group input.form-control {
-  height: auto;
-}
-section#contact form#contactForm .form-group-textarea {
-  height: 100%;
-}
-section#contact form#contactForm .form-group-textarea textarea {
-  height: 100%;
-  min-height: 10rem;
-}
-section#contact form#contactForm p.help-block {
-  margin: 0;
-}
-section#contact form#contactForm .form-control:focus {
-  border-color: #ffc800;
-  box-shadow: none;
-}
-section#contact form#contactForm ::-webkit-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm ::-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-ms-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
 
 .footer {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.shimmer {
-  text-align: center;
-  color: rgba(255,255,255,0.1);
-  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #f1b09b));
-  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  -webkit-background-size: 125px 100%;
-  -moz-background-size: 125px 100%;
-  /* background-size: 125px 100%; */
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-animation-name: shimmer;
-  -moz-animation-name: shimmer;
-  animation-name: shimmer;
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: #000;
-}
+
 .item-especialidade{
   display: flex;
   align-items: center;
@@ -11704,11 +11627,44 @@ strong{
     font-size: 2.5rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    color: rgb(36, 145, 250);
+    color: #000;
+    font-weight: 900;
     text-align: center; 
   }
+  .contato{
+    margin: 5%;
+    background: #D3D2CE !important;
+    border-radius: 50% 20px 20px 0;
+  }
   .contact{
-    color: #2491fa !important;
+    padding-top: 5%;
+    color: #000;
+    box-shadow: 10px 10px 10px #D3D2CE80;
+    background: #D3D2CE !important;
+    border-radius: 0 20px 20px 0;
+    font-weight: 500;
+  }
+  .contact-img{
+    top: -10%;
+    display: flex;
+    width: 100%;
+    background-image: url(/assets/img/Using\ smartphone.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    justify-content: flex-end;
+    font-size: 1.5em;
+  }
+  .contact button{
+    background: #000 !important;
+    border: 0;
+    width: 30%;
+    margin: 5% 0;
+    
+  }
+  .contact button:hover{
+    
   }
   .line {
     border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -11755,6 +11711,7 @@ strong{
     background-size: cover;
     justify-content: flex-end;
     font-size: 1.5em;
+    margin: -1px 0;
   }
   .especialidade-items{
     margin-left: 40%;
@@ -11796,154 +11753,6 @@ footer p{
     font-size: 10px;
     font-weight: 900;
 }
-.desenvolvimento{
-  background: linear-gradient(160deg, #2491FA, skyblue);
-  margin: 0;
-  padding: 0;
-
-
-}
-.desenvolvimento .col-md-6{
-  height: 100%;
-  width: 40%;
-  margin: 0 3px;
-}
-.img-desenvolvimento-1 {
-  position: relative;
-  margin-top: -20%;
-}
-.carousel {
- 
-}
-
-ul.slides {
-  display: block;
-  position: relative;
-  height: 600px;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  list-style: none;
-}
-
-.slides * {
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-}
-
-ul.slides input {
-  display: none; 
-}
-
-
-.slide-container { 
-  display: block; 
-}
-
-.slide-image {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0;
-  transition: all .7s ease-in-out;
-}   
-
-.slide-image img {
-  width: auto;
-  min-width: 100%;
-  height: 100%;
-}
-
-.carousel-controls {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  font-size: 100px;
-  line-height: 600px;
-  color: #fff;
-}
-
-.carousel-controls label {
-  display: none;
-  position: absolute;
-  padding: 0 20px;
-  opacity: 0;
-  transition: opacity .2s;
-  cursor: pointer;
-}
-
-.slide-image:hover + .carousel-controls label{
-  opacity: 0.5;
-}
-
-.carousel-controls label:hover {
-  opacity: 1;
-}
-
-.carousel-controls .prev-slide {
-  width: 49%;
-  text-align: left;
-  left: 0;
-}
-
-.carousel-controls .next-slide {
-  width: 49%;
-  text-align: right;
-  right: 0;
-}
-
-.carousel-dots {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 20px;
-  z-index: 999;
-  text-align: center;
-}
-
-.carousel-dots .carousel-dot {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.5;
-  margin: 10px;
-}
-
-input:checked + .slide-container .slide-image {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 1s ease-in-out;
-}
-
-input:checked + .slide-container .carousel-controls label {
-   display: block; 
-}
-
-input#img-1:checked ~ .carousel-dots label#img-dot-1,
-input#img-2:checked ~ .carousel-dots label#img-dot-2,
-input#img-3:checked ~ .carousel-dots label#img-dot-3,
-input#img-4:checked ~ .carousel-dots label#img-dot-4,
-input#img-5:checked ~ .carousel-dots label#img-dot-5,
-input#img-6:checked ~ .carousel-dots label#img-dot-6 {
-opacity: 1;
-}
-
-
-
-input:checked + .slide-container .nav label { display: block; }
-.carousel-1{
-  width: 100%;
-  height: 100%;
-  background: green;
-  
+.bg-edit{
+  background: linear-gradient(to bottom, #D6D3CE, #fff );
 }
