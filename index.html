@@ -25,7 +25,7 @@
         <div class="container nav-containter">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
                 <div class="container">
-                    <a class="navbar-brand " href="#page-top"><img class="logo-nav" src="assets/img/paz-branco-removebg-preview.png" height="500px" alt="..."/></a>
+                    <a class="navbar-brand " href="#page-top"><img class="logo-nav" src="assets/img/paz-branco-removebg-preview.png" height="30px" alt="Paz Agency"/></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         Menu
                         <i class="fas fa-bars ms-1"></i>
@@ -33,8 +33,8 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#services">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">Serviços</a></li>
                             <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
                         </ul>
                     </div>
@@ -44,19 +44,19 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Os site desenvolvidos por nós tem foco na conversão de clientes com design personalizado com base no seu tipo de negócio. </div>
+                <div class="masthead-subheading">Sites focados na conversão de clientes com design personalizado com base no seu tipo de negócio. </div>
                 <div class="masthead-heading text-uppercase line typing-animation">R$149,00</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#">Fazer orçamento</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#contact">Saiba mais</a>
             </div>
         </header>
         <section class="page-section" id="especialidade"> 
-            <div class="container">
+            <div class="container" id="services">
                 <div class="row">
                     <div class="col-md-4 item-especialidade" data-aos="fade-right">
                         <img class="img-fluid item-fisico" src="assets/img/loja fisica.png" alt="Loja física" />
                     </div>
                     <div class="col-md-4 item-especialidade" data-aos="fade-up">
-                        <div class="row">
+                        <div class="row row-especialidade">
                             <div class="col-sm-12">
                         <h2>Somos <strong>especializados</strong> na ampliação do seu négocio para o mundo digital</h2> 
                         </div>
@@ -93,13 +93,13 @@
         </section>
         <section id="especialidade-2">
             <div class="especialidade-items">
-                <h2>O profissionalismo que sua empresa precisa!</h2>
+                <h2 data-aos="fade-up">O profissionalismo que sua empresa precisa!</h2>
                 <ul>
-                    <li>Criação de site</li>
-                    <li>Logotipo</li>
-                    <li>Cartão de visita</li>
-                    <li>Mensagens automáticas via Whatsapp</li>
-                    <li>Tráfego pago</li>
+                    <li data-aos="fade-up">Criação de site</li>
+                    <li data-aos="fade-up">Logotipo</li>
+                    <li data-aos="fade-up">Cartão de visita</li>
+                    <li data-aos="fade-up">Mensagens automáticas via Whatsapp</li>
+                    <li data-aos="fade-up">Aumento das vendas</li>
                 </ul>
             </di >
         </section>
@@ -207,36 +207,36 @@
         </section>
        
         <!-- Contato-->
-        <div class="contato">
+        <div class="contato" id="contact">
             <div class="row">
                 <div class="col-md-6 contact-img"></div>
-                <div class="col-md-6 contact" data-aos="fade-up">
+                <div class="col-md-6 contact">
                     <h3 class="">CONTATO</h3>
                   <form class="row g-1" action="https://formsubmit.co/rafaelpaz10rpp@hotmail.com" method="POST" target="_blank">
                     
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="fade-up">
                       <label class="form-label">
                         NOME COMPLETO:
                       </label>
                       <input type="text" class="form-control"  name="nome" placeholder="Digite seu nome" required>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="fade-up">
                       <label class="form-label">
                         E-MAIL:
                       </label>
                       <input type="email" class="form-control" placeholder="Digite seu e-mail" name="email" required>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="fade-up">
                         <label class="form-label">
                           TELEFONE:
                         </label>
                         <input type="phone" class="form-control" placeholder="Digite o número para contato" name="phone" required>
                       </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="fade-up">
                       <label class="form-label">FALE CONOSCO:</label>
                       <textarea class="form-control" rows="7" name="faleconosco" placeholder="Envie-nos um breve resumo sobre o seu negócio e características que deseja." ></textarea> 
                     </div>
-                    <div class="col-md-12 btn-contact">
+                    <div class="col-md-12 btn-contact" data-aos="fade-up">
                       <button type="submit" target="_blank" class="btn btn-light bt-enviar btn btn-primary btn-xl  text-uppercase">Enviar</button>
                     </div>
                   </form>
@@ -245,25 +245,19 @@
         </div>
         
         <!-- Footer-->
-        <footer data-aos="fade-right">
-            <a name="contato"></a>
-            <div class="container">
+        <footer>
+            <div class="">
               <div class="row">
-                <div class="col-md-4 footerRedes">Siga-nos em nossas redes sociais</div>
+                <div class="col-sm-12 footerRedes footerIcones"><p>Siga-nos</p> <a href="https://www.instagram.com/stenio_veiculos/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/5575992874096?text=Tenho+interesse%21" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> <i class="fa-solid fa-phone"></i> <p>(75) 99287-4096</p></div>
                 
-                <div class="col-md-4"href="index.htm"><img src="assets/img/paz-branco-removebg-preview.png" alt="Stenio Veículos" width="60%"></div>
-                <div class="col-md-4 footerRedes"><i class="fa-solid fa-phone"></i> (75) 99287-4096</div>
+                  
               </div>
-              <div class="row">
-                <div class="col-md-4 footerIcones">
-                  <a href="https://www.instagram.com/stenio_veiculos/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="https://www.facebook.com/profile.php?id=100054664110979&ref=bookmarks" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="https://wa.me/5575992874096?text=Tenho+interesse%21" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
-                <div class="col-md-4"><p>Copyright Paz Agency 2023 - Todos os direitos reservados.</p>
-                <p>Desenvolvido por Rafael Paz</p></div>
-                <div class="col-md-4 footerRedes"><i class="fa-solid fa-location-dot"></i>Av. Maria Quitéria, 3240 
-    
-                  São João, Feira de Santana - BA</div>
+              <div class="row linha-footer footerRedes">
+                
+                <div class="col-sm-6"><a class=" " href="#page-top"><img src="assets/img/paz-branco-removebg-preview.png" height="30px" alt="Paz Agency"/></a>
+               
+                <div class="col-sm-12 footerRedes direitos"><p><i class="fa-regular fa-copyright"></i> Paz Agency 2023 - Todos os direitos reservados.</p></div>
               </div>
             </div>
           </footer>
@@ -437,6 +431,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        
+    
     </body>
 </html>
