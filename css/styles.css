@@ -87,8 +87,11 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
-
+html {
+  overflow-x: hidden;
+}
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -11138,6 +11141,7 @@ p {
 }
 .nav-containter{
   width: 100% !important;
+  overflow: hidden !important;
 }
 #mainNav {
   padding-top: 1rem;
@@ -11727,13 +11731,52 @@ strong{
   .especialidade-items h2{
     font-size: 140%;
   }
-  footer{
+  @media screen and (max-width:765px) {
+    .especialidade-items h2{
+      font-size: 100%;
+      font-weight: 900;
+    }
     
+    }
+  .btn-whatsapp a{
+    display: flex;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5%;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3); 
+    transition: 0.5s;  
+    z-index: 9;
+  }
+  .btn-whatsapp p {
+    margin: 8px 8px;
+  }
+  .btn-whatsapp img{
+    margin-left: 5px;
+  }
+  .btn-whatsapp a:hover img{
+    rotate: 360deg;
+    transition: 0.5s;
+  }
+  .btn-whatsapp a:hover{
+    color: green
+  }
+
+  footer{
+    position: inherit;
     width: 100%;
     margin-top: 3%;
     background: black;
     color: #ffffff;
     text-align: center;
+    z-index: 10;
+    overflow: hidden;
 }
 .footerRedes{
     display: flex;
