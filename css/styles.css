@@ -11775,6 +11775,7 @@ strong{
       background: transparent;
       box-shadow: none;
       padding: 0;
+      bottom: 40px;
     }
   }
   .btn-whatsapp p {
