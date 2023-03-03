@@ -11239,12 +11239,14 @@ header.masthead {
 }
   header.masthead .masthead-subheading{
     font-size: 9rem;
+    width: 120%;
   }
   header.masthead .masthead-heading {
     font-size: 200%;
     font-weight: 700;
     line-height: 3.25rem;
     margin-bottom: 2rem;
+    margin-top: 59%;
   }
 }
 
