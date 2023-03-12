@@ -215,7 +215,7 @@
             </div>
         </section>
         <div class="btn-whatsapp">
-            <a href="https://wa.me/message/AB3UPRUADASXF1" target="_blank"> <img src="assets/img/whatsapp.webp" height="80px" alt="Whatsapp"/>
+            <a onclick="return gtag_report_conversion('https://wa.me/message/AB3UPRUADASXF1');" target="_blank"> <img src="assets/img/whatsapp.webp" height="80px" alt="Whatsapp"/>
                 <p>Fale conosco</p></a>
             
         </div>
@@ -226,7 +226,7 @@
                 <div class="col-md-6 contact-img"></div>
                 <div class="col-md-6 contact">
                     <h3 class="">CONTATO</h3>
-                  <form class="row g-1" action="https://formsubmit.co/admin@pazwebagencia.com.br" method="POST" target="_blank">
+                  <form class="row g-1" action="https://formsubmit.co/contato@pazwebagencia.com.br" method="POST" target="_blank">
                     <div class="col-md-12" data-aos="fade-up">
                       <label class="form-label">
                         NOME COMPLETO:
@@ -262,7 +262,7 @@
             <div class="">
               <div class="row">
                 <div class="col-sm-12 footerRedes footerIcones"><p>Siga-nos</p> <a href="https://instagram.com/pazweb?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://wa.me/message/AB3UPRUADASXF1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> <a href="https://www.facebook.com/profile.php?id=100090622508925" target="_blank"><i class="fa-brands fa-facebook"></i></a>  <a href="tel:+5575991818398"><i class="fa-solid fa-phone"></i></a> <p>(75) 99181-8398</p></div>
+                    <a href="https://wa.me/message/AB3UPRUADASXF1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> <a href="https://www.facebook.com/profile.php?id=100090622508925" target="_blank"><i class="fa-brands fa-facebook"></i></a>  <a onclick="return gtag_report_conversion('tel:+5575991818398');"><i class="fa-solid fa-phone"></i></a> <p>(75) 99181-8398</p></div>
                 
                   
               </div>
@@ -449,6 +449,24 @@
 
   gtag('config', 'G-3MPZ4EDX3G');
 </script>
+<!-- Event snippet for cliente em contato conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-11113285045/DWvVCJiJwJEYELWLnbMp',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+    
+    
 <script>
     (function(d, w, c) {
         w.ChatraID = 'yt4bQM8sF6mEyJHqX';

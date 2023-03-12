@@ -11777,6 +11777,8 @@ strong{
     transition: 0.5s;  
     z-index: 9;
     border-radius: 10%;
+    cursor: pointer;
+    transition: 0.5s;
   }
   @media screen and (max-width: 800px) {
     .btn-whatsapp p{
@@ -11791,14 +11793,16 @@ strong{
   .btn-whatsapp p {
     margin: 1px 10px 1px 0;
     font-weight: 600;
+    color: #fff;
   }
 
   .btn-whatsapp a:hover img{
     rotate: 360deg;
     transition: 0.5s;
   }
-  .btn-whatsapp a:hover{
-    color: green
+  .btn-whatsapp:hover p{
+    color: #32D951;
+    transition: 0.5s;
   }
 
   footer{
